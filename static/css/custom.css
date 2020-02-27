@@ -60,50 +60,6 @@ a:hover {
   background-position: 95% center, 5% center;
   height: 20rem;
 }
-
-/* .cover {
-  background-color: #FFFFFF;
-  background-size: cover !important;
-  height: 50rem;
+article {
+  text-align: justify;
 }
-
-nav div {
-  flex-wrap: wrap;
-}
-
-nav a {
-  font-weight: bold;
-  color: rgb(0, 200, 0);
-}
-
-nav a:hover {
-  color: rgb(0, 220, 0);
-}
-
-.site-header {
-  display: flex;
-  flex: 0 0 100%;
-}
-
-.site-logo {
-  flex: 1 0 80%;
-  max-width: 20rem;
-}
-
-.language-bar {
-  flex: 1 0 20%;
-  padding: auto;
-  margin: auto;
-  height: 2rem;
-  text-align: right;
-}
-
-.language-bar a {
-  font-size: 0.9rem;
-  color: rgb(120, 120, 120);
-}
-
-.language-bar a:hover {
-  color: rgb(120, 120, 120);
-  opacity: 0.8;
-} */

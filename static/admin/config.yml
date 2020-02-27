@@ -12,6 +12,9 @@ collections: # A list of collections the CMS should be able to edit
         label: "Home Page (zh_hk)"
         name: "home_zh_hk"
         fields:
+          - {label: "Draft", name: "draft", widget: "boolean", required: false}
+          - {label: "Publish Date", name: "publishdate", widget: "date", required: false}
+          - {label: "Expiry Date", name: "expirydate ", widget: "date", required: false}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Hero Images", name: "hero_images", widget: "image", required: false}
@@ -24,6 +27,9 @@ collections: # A list of collections the CMS should be able to edit
         label: "Home Page (en)"
         name: "home_en"
         fields:
+          - {label: "Draft", name: "draft", widget: "boolean", required: false}
+          - {label: "Publish Date", name: "publishdate", widget: "date", required: false}
+          - {label: "Expiry Date", name: "expirydate ", widget: "date", required: false}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Hero Images", name: "hero_images", widget: "image", required: false}
@@ -34,6 +40,9 @@ collections: # A list of collections the CMS should be able to edit
     folder: "content/zh_hk/pages"
     create: true
     fields:
+      - {label: "Draft", name: "draft", widget: "boolean", required: false}
+      - {label: "Publish Date", name: "publishdate", widget: "date", required: false}
+      - {label: "Expiry Date", name: "expirydate ", widget: "date", required: false}
       - {label: "Menu", name: "menu", widget: "string", required: false}
       - {label: "Weight", name: "weight", widget: "number", required: false}
       - {label: "Parent", name: "parent", widget: "string", required: false}
@@ -49,6 +58,9 @@ collections: # A list of collections the CMS should be able to edit
     folder: "content/en/pages"
     create: true
     fields:
+      - {label: "Draft", name: "draft", widget: "boolean", required: false}
+      - {label: "Publish Date", name: "publishdate", widget: "date", required: false}
+      - {label: "Expiry Date", name: "expirydate ", widget: "date", required: false}
       - {label: "Menu", name: "menu", widget: "code", required: false}
       - {label: "Weight", name: "weight", widget: "number", required: false}
       - {label: "Parent", name: "parent", widget: "string", required: false}

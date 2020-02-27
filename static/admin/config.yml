@@ -1,0 +1,60 @@
+backend:
+  name: git-gateway
+
+media_folder: "static/images" # Folder where user uploaded files should go
+public_folder: "/images"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "home_zh_hk"
+    label: "Home Page (zh_hk)"
+    files:
+      - file: "content/zh_hk/_index.md"
+        label: "Home Page (zh_hk)"
+        name: "home_zh_hk"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Hero Images", name: "hero_images", widget: "image", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "home_en"
+    label: "Home Page (en)"
+    files:
+      - file: "content/en/_index.md"
+        label: "Home Page (en)"
+        name: "home_en"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Hero Images", name: "hero_images", widget: "image", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "pages_zh_hk"
+    label: "Pages (zh_hk)"
+    folder: "content/zh_hk/pages"
+    create: true
+    fields:
+      - {label: "Menu", name: "menu", widget: "string", required: false}
+      - {label: "Weight", name: "weight", widget: "number", required: false}
+      - {label: "Parent", name: "parent", widget: "string", required: false}
+      - {label: "Omit Header Text", name: "omit_header_text", widget: "boolean", required: false}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured Images", name: "featured_images", widget: "image", required: false}
+      - {label: "Page Icon", name: "page_icon", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "pages_en"
+    label: "Pages (en)"
+    folder: "content/en/pages"
+    create: true
+    fields:
+      - {label: "Menu", name: "menu", widget: "code", required: false}
+      - {label: "Weight", name: "weight", widget: "number", required: false}
+      - {label: "Parent", name: "parent", widget: "string", required: false}
+      - {label: "Omit Header Text", name: "omit_header_text", widget: "boolean", required: false}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured Images", name: "featured_images", widget: "image", required: false}
+      - {label: "Page Icon", name: "page_icon", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}

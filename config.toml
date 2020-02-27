@@ -12,6 +12,7 @@ enableRobotsTXT = true
     languageCode = "zh_hk"
     languageName = "中文"
     weight = 1
+    site_logo_text = "傳遞愛"
     title = "SMART ❤ 傳遞愛"
     contentDir = "content/zh_hk"
     [languages.zh_hk.params]
@@ -20,7 +21,8 @@ enableRobotsTXT = true
     languageCode = "en"
     languageName = "English"
     weight = 2
-    title = "SMART ❤ To deliver warmth"
+    site_logo_text = "for you"
+    title = "SMART ❤ for you"
     contentDir = "content/en"
     [languages.en.params]
       description = "A platform for aging community's health & wellbeing."
@@ -31,7 +33,7 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
 
 [params]
-  favicon = ""
+  favicon = "images/favicon.png"
   description = "A platform for aging community's health & wellbeing."
   facebook = ""
   twitter = ""
@@ -47,9 +49,7 @@ enableRobotsTXT = true
   featured_image = "/images/hero_design.png"
   recent_posts_number = 2
 
-  custom_css = [
-    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
-    "css/custom.css"
-  ]
-  cover_dimming_class = "bg-black-50"
+  custom_css = ["css/custom.css"]
+  cover_dimming_class = "bg-black-40"
+  site_logo = "/images/logo.svg"
 

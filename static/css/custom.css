@@ -1,0 +1,109 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+a:hover {
+  opacity: .6;
+}
+.site-top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: .5rem 1.5rem .5rem 1.5rem;
+  justify-content: center;
+  height: 4rem;
+  background-color: #EDFFED;
+}
+.site-logo {
+  white-space: nowrap;
+  display: inline-block;
+}
+.site-logo img {
+  max-width: 15rem;
+  width: calc(100% - 8rem);
+  height: 4rem;
+}
+.site-logo-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: calc(1.5rem + .2vw);
+  color: #f1a315;
+  max-width: 100px;
+}
+.language-switcher {
+  flex: 1 0;
+  text-align: right;
+  margin: 0;
+  align-self: center;
+}
+.language-switcher a {
+  font-size: .9rem;
+  white-space: nowrap;
+  color: #7304b3;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.hero nav {
+  flex: 0 0 100%;
+  padding-top: 0;
+}
+.page-header {
+  flex: 0 0 100%;
+}
+.cover {
+  background-color: #CCFFDD;
+  background-size: contain, contain !important;
+  background-position: 100% center, 0% center;
+  background-repeat: no-repeat, no-repeat;
+  height: 45rem;
+}
+.page-banner {
+  background-position: 95% center, 5% center;
+  height: 20rem;
+}
+
+/* .cover {
+  background-color: #FFFFFF;
+  background-size: cover !important;
+  height: 50rem;
+}
+
+nav div {
+  flex-wrap: wrap;
+}
+
+nav a {
+  font-weight: bold;
+  color: rgb(0, 200, 0);
+}
+
+nav a:hover {
+  color: rgb(0, 220, 0);
+}
+
+.site-header {
+  display: flex;
+  flex: 0 0 100%;
+}
+
+.site-logo {
+  flex: 1 0 80%;
+  max-width: 20rem;
+}
+
+.language-bar {
+  flex: 1 0 20%;
+  padding: auto;
+  margin: auto;
+  height: 2rem;
+  text-align: right;
+}
+
+.language-bar a {
+  font-size: 0.9rem;
+  color: rgb(120, 120, 120);
+}
+
+.language-bar a:hover {
+  color: rgb(120, 120, 120);
+  opacity: 0.8;
+} */

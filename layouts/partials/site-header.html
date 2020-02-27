@@ -1,0 +1,58 @@
+<div class="site-top-bar">
+  {{ if .Site.Params.site_logo }}
+    <div class="site-logo">
+      <a href="{{ .Site.BaseURL }}" class="no-underline">
+        <img src="{{ .Site.Params.site_logo }}" alt="image from {{ .Title }}">
+        <div class="site-logo-text">
+          {{ .Site.Params.site_logo_text }}
+        </div>
+      </a>
+    </div>
+  {{ end }}
+  <div class="language-switcher">
+    {{ partial "i18nlist.html" . }}
+  </div>
+</div>
+
+{{ $.Scratch.Set "hero_image_style" "background-image: " }}
+{{ if (isset .Params "hero_images") }}
+  {{ $no_of_images := ( len (.Param "hero_images") ) }}
+  {{ range $index, $element := .Param "hero_images"}}
+    {{ $.Scratch.Add "hero_image_style" ( print "url('" (. | absURL) "')" ) }}
+    {{ if not ( eq (add $index 1) $no_of_images ) }}
+      {{ $.Scratch.Add "hero_image_style" "," }}
+    {{ end }}
+  {{ end }}
+
+  <header class="cover bg-top" style='{{ $.Scratch.Get "hero_image_style"  | safeCSS }};'>
+    <div class='{{ .Site.Params.cover_dimming_class | default "bg-black-60" }} hero'>
+      {{ partial "site-navigation.html" .}}
+      <div class="tc-l pv4 ph3 ph4-ns page-header">
+        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
+          {{ .Title | default .Site.Title }}
+        </h1>
+        {{ with .Params.description }}
+          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
+            {{ . }}
+          </h2>
+        {{ end }}
+      </div>
+    </div>
+  </header>
+{{ else }}
+  <header>
+    <div class="pb3-m pb6-l {{ .Site.Params.background_color_class | default "bg-black" }}">
+      {{ partial "site-navigation.html" . }}
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          {{ .Title | default .Site.Title }}
+        </h1>
+        {{ with .Params.description }}
+          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+            {{ . }}
+          </h2>
+        {{ end }}
+      </div>
+    </div>
+  </header>
+{{ end }}

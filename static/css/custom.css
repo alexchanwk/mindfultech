@@ -1,24 +1,31 @@
+@import url("site_constants.css");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("responsive_menu.css");
+
 a:hover {
   opacity: .6;
 }
+
 .site-top-bar {
   display: flex;
   flex-wrap: wrap;
-  padding: .5rem 1.5rem .5rem 1.5rem;
+  padding: .5rem 0 .5rem 0;
   justify-content: center;
   height: 4rem;
-  background-color: #EDFFED;
+  background-color: var(--top-bar-color);
 }
+
 .site-logo {
   white-space: nowrap;
   display: inline-block;
 }
+
 .site-logo img {
   max-width: 15rem;
   width: calc(100% - 8rem);
   height: 4rem;
 }
+
 .site-logo-text {
   display: inline-block;
   vertical-align: top;
@@ -26,29 +33,35 @@ a:hover {
   color: #f1a315;
   max-width: 100px;
 }
+
 .language-switcher {
   flex: 1 0;
   text-align: right;
   margin: 0;
   align-self: center;
 }
+
 .language-switcher a {
   font-size: .9rem;
   white-space: nowrap;
-  color: #7304b3;
+  color: var(--top-bar-text-color);
 }
+
 .hero {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
 }
+
 .hero nav {
   flex: 0 0 100%;
   padding-top: 0;
 }
+
 .page-header {
   flex: 0 0 100%;
 }
+
 .cover {
   background-color: #CCFFDD;
   background-size: contain, contain !important;
@@ -56,10 +69,12 @@ a:hover {
   background-repeat: no-repeat, no-repeat;
   height: 45rem;
 }
+
 .page-banner {
   background-position: 95% center, 5% center;
   height: 20rem;
 }
+
 article {
   text-align: justify;
 }

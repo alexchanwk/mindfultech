@@ -1,0 +1,20 @@
+<input class="menu-btn" type="checkbox" id="menu-btn" />
+<label class="menu-icon" for="menu-btn">
+  <span class="navicon">
+  </span>
+</label>
+<ul class="pl0 mr3 menu">
+  {{ if .Site.Menus.main }}
+    {{ range .Site.Menus.main }}
+    <li class="list f5 f4-ns fw4 pr3">
+      <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ .Name }} page">
+          {{ .Name }}
+        </a>
+    </li>
+    {{ end }}
+  {{ end }}
+  <div class="menu-language-switcher">
+    {{ partial "i18nlist.html" . }}
+  </div>
+  {{ partialCached "social-follow.html" . }}
+</ul>

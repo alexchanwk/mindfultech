@@ -1,0 +1,16 @@
+<div class="site-top-bar menu-bar">
+{{ if .Site.Params.site_logo }}
+    <div class="site-logo">
+    <a href="{{ .Site.BaseURL }}" class="no-underline">
+        <img src="{{ .Site.Params.site_logo }}" alt="image from {{ .Title }}">
+        <div class="site-logo-text">
+        {{ .Site.Params.site_logo_text }}
+        </div>
+    </a>
+    </div>
+{{ end }}
+<div class="language-switcher">
+    {{ partial "i18nlist.html" . }}
+</div>
+{{ partial "responsive-menu.html" . }}
+</div>

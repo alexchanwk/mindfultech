@@ -1,18 +1,4 @@
-<div class="site-top-bar">
-  {{ if .Site.Params.site_logo }}
-    <div class="site-logo">
-      <a href="{{ .Site.BaseURL }}" class="no-underline">
-        <img src="{{ .Site.Params.site_logo }}" alt="image from {{ .Title }}">
-        <div class="site-logo-text">
-          {{ .Site.Params.site_logo_text }}
-        </div>
-      </a>
-    </div>
-  {{ end }}
-  <div class="language-switcher">
-    {{ partial "i18nlist.html" . }}
-  </div>
-</div>
+{{ partial "site-top-bar.html" . }}
 
 {{ $.Scratch.Set "hero_image_style" "background-image: " }}
 {{ if (isset .Params "hero_images") }}

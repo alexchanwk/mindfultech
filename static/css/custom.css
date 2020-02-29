@@ -1,5 +1,6 @@
 @import url("site_constants.css");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css"); */
 @import url("responsive_menu.css");
 
 a:hover {
@@ -63,7 +64,7 @@ a:hover {
 }
 
 .cover {
-  background-color: #CCFFDD;
+  background-color: var(--cover-background-color);
   background-size: contain, contain !important;
   background-position: 100% center, 0% center;
   background-repeat: no-repeat, no-repeat;

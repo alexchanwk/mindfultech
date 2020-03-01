@@ -34,7 +34,7 @@ description: "為 *老年化社會* 的 **健康** 和 **福祉** 而設的 綜�
 {{< /bulma/card >}}
 ---
 {{< bulma/card header-title="同AI 心靈導師聊天及評估" header-title-modifiers="" >}}
-{{< bulma/card/image src="/images/step3.png" alt="Seeking help" modifiers="is-4by3" >}}
+{{< bulma/card/image src="/images/step3.jpg" alt="Seeking help" modifiers="is-4by3" >}}
 {{% bulma/card/content %}}
  * 手機文字或者語音簡易溝通， 4種APP內置經臨床心理學驗證的評估工具， 3分鐘科學分類及配對， 
  * 區分病情輕，中，急等級，及時分流。

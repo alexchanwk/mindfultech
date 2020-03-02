@@ -8,7 +8,7 @@ description: |-
   從今日起，你既**情緒健康**同埋**心身靈活動**由你自己話事
 ---
 
-{{< bulma/hero modifiers="is-medium" background-image-url="/images/demo.png" >}}
+{{< bulma/hero modifiers="is-large" background-image-url="/images/demo.png" >}}
 {{< bulma/columns >}}
 {{< bulma/columns/column modifiers="is-half" >}}
 {{< /bulma/columns/column >}}

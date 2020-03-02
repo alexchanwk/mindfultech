@@ -3,6 +3,21 @@
 @import url("bulma.min.css");
 @import url("responsive_menu.css");
 
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, Arial, sans-serif;
+}
+
+em {
+  color: var(--emphasis-text-color);
+  font-weight: bolder;
+  font-style: normal;
+}
+
+strong {
+  color: var(--emphasis-text-color);
+  font-weight: bold;
+}
+
 a:hover {
   opacity: .6;
 }
@@ -63,6 +78,10 @@ a:hover {
   flex: 0 0 100%;
 }
 
+.page-header h2 {
+  text-align: justify;
+}
+
 .cover {
   background-color: var(--cover-background-color);
   background-size: contain, contain !important;
@@ -78,4 +97,27 @@ a:hover {
 
 article {
   text-align: justify;
+}
+
+.bulma .card-header-title {
+  height: 8rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: var(--title-text-color);
+}
+
+.bulma .card-image {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.bulma .card-content {
+  height: calc(25rem + 3vw);
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0 1rem 0 1rem;
+}
+
+.bulma .content ul {
+  margin-left: 1em;
 }

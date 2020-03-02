@@ -1,5 +1,7 @@
 :root {
   --top-bar-color: #CCEEDD;
-  --top-bar-text-color: #7304b3;
+  --top-bar-text-color: #7304B3;
   --cover-background-color: #CCFFDD;
+  --title-text-color: #7304B3;
+  --emphasis-text-color: #F1A315;
 }

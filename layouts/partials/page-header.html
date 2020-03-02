@@ -15,10 +15,10 @@
       {{ partial "site-navigation.html" . }}
       <div class="tc-l ph3 ph4-ns">
         {{ if not .Params.omit_header_text }}
-          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">{{ .Title | default .Site.Title }}</h1>
-          {{ with .Params.description  }}
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">{{ .Title | default .Site.Title | markdownify }}</h1>
+          {{ with .Params.description }}
             <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
-              {{ . }}
+              {{ .  | markdownify }}
             </h2>
           {{ end }}
         {{ end }}

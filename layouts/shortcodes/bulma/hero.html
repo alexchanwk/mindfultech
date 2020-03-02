@@ -1,0 +1,9 @@
+<div class="bulma">
+    <section class='bulma hero {{ with .Get "modifiers" }}{{.}}{{ end }}' {{ with .Get "background-image-url" }}style="background-image: url('{{. | absURL }}')"{{ end }}>
+        <div class="hero-overlay">
+            {{ .Inner }}
+        </div>
+    </section>
+</div>
+
+    

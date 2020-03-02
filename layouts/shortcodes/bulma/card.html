@@ -3,8 +3,8 @@
     {{ if or (.Get "header-title") (.Get "header-icon") }}
     <header class="card-header">
       {{ if .Get "header-title"}}
-      <p class=card-header-title {{ with .Get "header-title-modifiers" }}{{ .Get "header-title-modifiers" }}{{ end }}>
-        {{ .Get "header-title" }}
+      <p class='card-header-title {{ with .Get "header-title-modifiers" }}{{.}}{{ end }}'>
+        {{ .Get "header-title" | safeHTML }}
       </p>
       {{ end }}
       {{ if .Get "header-icon"}}
@@ -17,6 +17,6 @@
     </header>
     {{ end }}
 
-    {{ .Inner  }}
+    {{ .Inner }}
   </div>
 </div>

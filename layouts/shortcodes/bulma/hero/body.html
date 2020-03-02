@@ -1,0 +1,19 @@
+<div class="hero-body">
+  <div class='container {{ with .Get "modifiers" }}{{.}}{{ end }}'>
+    {{ with .Get "hero-title"}}
+    <p class="title">
+      {{ . }}
+    </p>
+    {{ end }}
+    {{ with .Get "hero-subtitle"}}
+    <p class="subtitle">
+      {{ . }}
+    </p>
+    {{ end }}
+    {{ if len .Inner }}
+    <div class='content'>
+      {{ .Inner }}
+    </div>
+    {{ end }}
+  </div>
+</div>

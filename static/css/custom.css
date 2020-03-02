@@ -14,7 +14,7 @@ em {
 }
 
 strong {
-  color: var(--emphasis-text-color);
+  color: var(--emphasis-text-color) !important;
   font-weight: bold;
 }
 
@@ -99,11 +99,17 @@ article {
   text-align: justify;
 }
 
+.bulma .card-header {
+  display: table;
+}
+
 .bulma .card-header-title {
+  display: table-cell;
   height: 8rem;
   overflow-x: hidden;
   overflow-y: hidden;
   color: var(--title-text-color);
+  vertical-align: top;
 }
 
 .bulma .card-image {
@@ -112,12 +118,32 @@ article {
 }
 
 .bulma .card-content {
-  height: calc(25rem + 3vw);
+  min-height: 25rem;
   overflow-x: hidden;
   overflow-y: auto;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem 2rem 1rem;
 }
 
 .bulma .content ul {
   margin-left: 1em;
+}
+
+.bulma .hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bulma .hero .hero-overlay {
+  content: '';
+  background-color: rgba(0,0,0,.6);
+  width: 100%;
+  height: 100%;
+}
+
+.bulma .hero .content-section,
+.bulma .hero .content-section .title,
+.bulma .hero .content-section .content {
+  text-align: left;
+  color: var(--hero-text-color);
 }

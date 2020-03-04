@@ -1,6 +1,10 @@
 {{ partial "site-top-bar.html" . }}
 
-{{ $.Scratch.Set "hero_image_style" "background-image: " }}
+{{ $.Scratch.Set "hero_image_style" "" }}
+{{ if (isset .Params "hero_images_style") }}
+  {{ $.Scratch.Add "hero_image_style" (print (.Param "hero_images_style")) }}
+{{ end }}
+{{ $.Scratch.Add "hero_image_style" "background-image: " }}
 {{ if (isset .Params "hero_images") }}
   {{ $no_of_images := ( len (.Param "hero_images") ) }}
   {{ range $index, $element := .Param "hero_images"}}
@@ -22,12 +26,15 @@
             </h2>
           {{ end }}
         {{ end }}
+        {{ if (isset .Params "custom_header_text") }}
+            <h1 class="f1 fw5 mt5 white-90 mb0 lh-title">{{ .Params.custom_header_text | markdownify }}</h1>
+        {{ end }}
       </div>
     </div>
   </header>
 {{ else }}
   <header>
-    <div class="{{ .Site.Params.background_color_class | default "bg-black" }}">
+    <div class='{{ .Site.Params.background_color_class | default "bg-black" }}'>
       {{ partial "site-navigation.html" . }}
     </div>
   </header>

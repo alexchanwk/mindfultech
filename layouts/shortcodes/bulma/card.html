@@ -4,10 +4,10 @@
     <header class="card-header">
       {{ if .Get "header-title"}}
       <p class='card-header-title {{ with .Get "header-title-modifiers" }}{{.}}{{ end }}'>
-        {{ .Get "header-title" | safeHTML }}
+        {{ .Get "header-title" | markdownify }}
       </p>
       {{ end }}
-      {{ if .Get "header-icon"}}
+      {{ if .Get "header-icon" }}
       <a href='{{ with .Get "header-icon-href" }}{{.}}{{ end }}' class="card-header-icon" aria-label='{{ with .Get "header-icon-aria-label" }}{{.}}{{ end }}'>
         <span class="icon">
           <i class='{{ .Get "header-icon" }}' aria-hidden="true"></i>

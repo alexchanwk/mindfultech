@@ -1,6 +1,10 @@
 {{ partial "site-top-bar.html" . }}
 
-{{ $.Scratch.Set "hero_image_style" "background-image: " }}
+{{ $.Scratch.Set "hero_image_style" "" }}
+{{ if (isset .Params "hero_images_style") }}
+{{ $.Scratch.Add "hero_image_style" (print (.Param "hero_images_style")) }}
+{{ end }}
+{{ $.Scratch.Add "hero_image_style" "background-image: " }}
 {{ if (isset .Params "hero_images") }}
   {{ $no_of_images := ( len (.Param "hero_images") ) }}
   {{ range $index, $element := .Param "hero_images"}}

@@ -1,0 +1,12 @@
+{{ if eq (.Get "modifiers") "is-ancester" }}
+<div class="bulma">
+  <div class='bulma tile is-ancester {{ with .Get "modifiers" }}{{.}}{{ end }}'>
+    {{ .Inner }}
+  </div>
+</div>
+{{ else }}
+<div class='bulma tile {{ with .Get "modifiers" }}{{.}}{{ end }}'>
+  {{ .Inner }}
+</div>
+{{ end }}
+

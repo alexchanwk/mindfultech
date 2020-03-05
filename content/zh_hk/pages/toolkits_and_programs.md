@@ -8,7 +8,7 @@ hero_images: ["/images/banner.png"]
 ---
 
 {{< bulma/tile modifiers="is-ancester" >}}
-  {{< bulma/tile modifiers="is-parent is-vertical is-12" >}}
+  {{< bulma/tile modifiers="is-parent is-12" >}}
      {{% bulma/tile modifiers="is-child box content is-large" markkdown="true" %}}
 # 心理輔導是一場雙向的對話，而非單方面的吐苦水。
 
@@ -16,9 +16,16 @@ hero_images: ["/images/banner.png"]
 
 課程採用網上學習形式及揉合網上課堂及面授工作坊的混合教學方式 (Flipped Classroom)，每個不同模組對應不同需要，每個模組分為三個漸進式學習單元，學員可以根據個人需要及我們的個性化推薦隨心選擇。
     {{< /bulma/tile >}}
-    {{< bulma/tile modifiers="is-child box" >}}
-      {{< bulma/image image_src="/images/collaboration.png" modifiers="is-fullwidth" >}}
+  {{< /bulma/tile >}}
+{{< /bulma/tile >}}
+
+{{< bulma/tile modifiers="is-ancester" >}}
+  {{< bulma/tile modifiers="is-parent is-12" >}}
+    {{< bulma/tile modifiers="is-child is-1" >}}{{< /bulma/tile >}}
+    {{< bulma/tile modifiers="is-child box is-10" >}}
+      {{< bulma/image image_src="/images/collaboration.png" modifiers="is-3by1" >}}
     {{< /bulma/tile >}}
+    {{< bulma/tile modifiers="is-child is-1" >}}{{< /bulma/tile >}}
   {{< /bulma/tile >}}
 {{< /bulma/tile >}}
 

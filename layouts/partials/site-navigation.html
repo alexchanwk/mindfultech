@@ -3,6 +3,11 @@
     <div class="flex-l items-center">
       {{ if .Site.Menus.main }}
       <ul class="pl0 mr3">
+        <li class="f5 f4-ns fw4 dib pr3">
+          <a class="hover-white no-underline white-90" href="{{ .Site.BaseURL | relLangURL }}">
+            <i class="fa fas fa-home fa-lg"></i>
+          </a>
+        </li>
         {{ range .Site.Menus.main }}
         <li class="f5 f4-ns fw4 dib pr3">
           <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ .Name }} page">

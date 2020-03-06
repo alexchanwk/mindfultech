@@ -3,11 +3,11 @@ title: SMART ❤ 傳遞愛
 hero_images: ["/images/hero.png", "/images/hero_sub.png"]
 hero_images_style: 'background-size:contain,contain!important;background-position:100% center,0% center!important;'
 description: |-
-  為**老年化社會**的**健康**和**福祉**而設的**綜合平台**。
+  為**老年化社會**的**健康**和**福祉**而設的**綜合平台**
   
-  按每位長者需要配對最適切的服務，**針對性**， **簡易性**，**互動性**, 照顧長者精神健康需要。
+  按每位長者需要配對最適切的服務，**針對性**， **簡易性**，**互動性**, 照顧長者精神健康需要
  
-  從今日起，你既**情緒健康**同埋**心身靈活動**由你自己話事。
+  從今日起，你既**情緒健康**同埋**心身靈活動**由你自己話事
 ---
 
 {{< bulma/hero modifiers="is-large" background-image-url="/images/demo.png" >}}
@@ -16,11 +16,11 @@ description: |-
     {{< /bulma/columns/column >}}
     {{< bulma/columns/column >}}
       {{% bulma/hero/body hero-title="以人為本" modifiers="content-section" %}}
-以研究實證和臨床驗證為本，配合最新大數據及人工智能技術幫助老人自助解決精神困擾，推廣家人精神健康。
+以研究實證和臨床驗證為本，配合最新大數據及人工智能技術幫助老人自助解決精神困擾，推廣家人精神健康
 
-我們旨在用簡易高效的方法提供一站式網上自己心理支援平台，提供階段式及個性化服務幫到你。
+我們旨在用簡易高效的方法提供一站式網上自己心理支援平台，提供階段式及個性化服務幫到你
 
-完成簡單登記後，你將得到以下心理健康體驗。
+完成簡單登記後，你將得到以下心理健康體驗
 
       {{% /bulma/hero/body %}}
     {{< /bulma/columns/column >}}
@@ -35,7 +35,7 @@ description: |-
         {{% bulma/card/content %}}
   * 係我不開心和孤獨的時候，引導我，幫助我， 有「人」 同我互動
   * 鍾意接近我地實際生活需要，簡單又實際既服務
-  * 比出面睇醫生或者周圍揾人幫手方便好多，而且可以自己做選擇。
+  * 比出面睇醫生或者周圍揾人幫手方便好多，而且可以自己做選擇
   * 短時間內解決一啲以前需要花好長時間， 好多錢，仲要依靠其他人先至可以做到既事情
         {{% /bulma/card/content %}}
       {{< /bulma/card >}}
@@ -58,8 +58,8 @@ description: |-
       {{< bulma/card header-title="同**AI心靈導師**聊天及評估" >}}
       {{< bulma/card/image src="/images/step3.png" alt="Seeking help" modifiers="is-4by3" >}}
       {{% bulma/card/content %}}
-  * 手機文字或者語音簡易溝通， 4種APP內置經臨床心理學驗證的評估工具， 3分鐘科學分類及配對， 
-  * 區分病情輕，中，急等級，及時分流。
+  * 手機文字或者語音簡易溝通， 4種APP內置經臨床心理學驗證的評估工具， 3分鐘科學分類及配對
+  * 區分病情輕，中，急等級，及時分流
   * 解除迷思及病狀誤解， 到底怎樣才是「焦慮症」？什麼是抑鬱症，什麼是認知障礙？解除疑慮，防止簡單情緒問題影響日常功能，社交、生活
       {{% /bulma/card/content %}}
       {{< /bulma/card >}}

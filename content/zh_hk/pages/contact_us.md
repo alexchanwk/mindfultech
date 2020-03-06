@@ -3,6 +3,7 @@ menu: main
 weight: 4
 title: "Contact us"
 description: "為 *老年化社會* 的 **健康** 和 **福祉** 而設的 綜合平台"
+hero_images: ["/images/banner.png"]
 ---
 {{< bulma/tile modifiers="is-ancester" >}}
   {{< bulma/tile modifiers="is-parent is-3" >}}

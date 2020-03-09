@@ -103,7 +103,7 @@ description: |-
         {{< bulma/card/image src="/images/step6.png" alt="Seeking help" modifiers="is-4by3" >}}
         {{% bulma/card/content %}}
   * 成為**SMART❤**會員，免費享用多項健康資訊類服務， 更可以通過
-  * **SMART❤**會員獎賞計劃（你可以通過向朋友介紹我們的**SMART❤ APP**, 和我們團隊分享你的使用**SMART❤**的故事，**SMART❤**義工招募，以及參與我們組織的**SMART❤**線上/線下教育工作坊等獲得）賺取![SMART❤積分](/images/smart_token.png "SMART❤點數")**點數** ，換取高階治療教程及服務
+  [//]: # (* **SMART❤**會員獎賞計劃（你可以通過向朋友介紹我們的**SMART❤ APP**, 和我們團隊分享你的使用**SMART❤**的故事，**SMART❤**義工招募，以及參與我們組織的**SMART❤**線上/線下教育工作坊等獲得）賺取![SMART❤積分](/images/smart_token.png "SMART❤點數")**點數** ，換取高階治療教程及服務)
   * 老年健康諮詢社區平臺
   * 尋找同伴及連接平臺
   * 臨床醫學科研輔助平臺

@@ -26,6 +26,19 @@
             {{ . | markdownify }}
           </h2>
         {{ end }}
+        {{ if .Params.start_button_link }}
+        <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt5 mb4 tl-l">
+          <div class="bulma">
+            <a class="button is-warning is-rounded is-large start-button" href="{{ .Params.start_button_link }}">
+              {{ if .Params.start_button_label }}
+                {{ .Params.start_button_label }}
+              {{ else }}
+                Click here to start
+              {{ end }}
+            </a>
+          </div>
+        </div>
+        {{ end }}
       </div>
     </div>
   </header>
@@ -41,6 +54,17 @@
           <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
             {{ . | safeHTML }}
           </h2>
+        {{ end }}
+        {{ with .Params.start_button_link }}
+        <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4 has-text-left">
+          <a href="{{ . }}">
+            {{ if .Params.start_button_label }}
+              {{ .Params.start_button_label }}
+            {{ else }}
+              Click here to start
+            {{ end }}
+          </a>
+        </div>
         {{ end }}
       </div>
     </div>

@@ -112,6 +112,7 @@ article {
 
 .bulma .card-header {
   display: table;
+  width: 100%;
 }
 
 .bulma .card-header-title {

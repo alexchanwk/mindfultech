@@ -17,14 +17,18 @@ start_button_link: 'pages/survey'
     {{< bulma/columns/column modifiers="is-half" >}}
     {{< /bulma/columns/column >}}
     {{< bulma/columns/column >}}
-      {{% bulma/hero/body hero-title="以人為本" modifiers="content-section" video="U53fM4rJSmQ" %}}
+      {{< bulma/hero/body hero-title="以人為本" modifiers="content-section" video="U53fM4rJSmQ" >}}
+        {{% embed/md %}}
 以研究實證和臨床驗證為本，配合最新大數據及人工智能技術幫助老人自助解決精神困擾，推廣家人精神健康
 
 我們旨在用簡易高效的方法提供一站式網上自己心理支援平台，提供階段式及個性化服務幫到你
 
 完成簡單登記後，你將得到以下心理健康體驗
+        {{% /embed/md %}}
 
-      {{% /bulma/hero/body %}}
+        {{< youtube U53fM4rJSmQ >}}
+
+      {{< /bulma/hero/body >}}
     {{< /bulma/columns/column >}}
   {{< /bulma/columns >}}
 {{< /bulma/hero >}}

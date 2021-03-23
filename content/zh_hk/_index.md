@@ -10,6 +10,8 @@ description: |-
   從今日起，你既**情緒健康**同埋**心身靈活動**由你自己話事
 start_button_label: '免費體驗'
 start_button_link: 'pages/survey'
+download_label: 'APK 下載'
+download_image: '/images/qr-code.png'
 ---
 
 {{< bulma/hero modifiers="is-large" background-image-url="/images/demo.png" >}}

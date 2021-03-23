@@ -29,13 +29,24 @@
         {{ if .Params.start_button_link }}
         <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt5 mb4 tl-l">
           <div class="bulma">
-            <a class="button is-warning is-rounded is-large start-button" href="{{ .Params.start_button_link }}">
-              {{ if .Params.start_button_label }}
-                {{ .Params.start_button_label }}
-              {{ else }}
-                Click here to start
-              {{ end }}
-            </a>
+            <div class="columns is-vcentered">
+              <div class="column is-narrow">
+                <a class="button is-warning is-rounded is-large start-button" href="{{ .Params.start_button_link }}">
+                  {{ if .Params.start_button_label }}
+                    {{ .Params.start_button_label }}
+                  {{ else }}
+                    Click here to start
+                  {{ end }}
+                </a>
+              </div>
+              <div class="column is-narrow">
+                <a href="/files/app-release.apk">
+                  <figure class="image is-128x128">
+                    <img src="{{ .Params.download_image }}" alt="{{ .Params.download_label }}">
+                  </figure>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         {{ end }}

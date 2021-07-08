@@ -41,6 +41,7 @@ a:hover {
   max-width: 15rem;
   width: calc(100% - 8rem);
   height: 4rem;
+  display: none;
 }
 
 .site-logo-text {
@@ -49,6 +50,7 @@ a:hover {
   font-size: calc(1.5rem + .2vw);
   color: #f1a315;
   max-width: 100px;
+  display: none;
 }
 
 .language-switcher {
